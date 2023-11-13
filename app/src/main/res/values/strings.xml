@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StartingServices</string>
+    <string name="start_countdown">Start Countdown</string>
+</resources>
