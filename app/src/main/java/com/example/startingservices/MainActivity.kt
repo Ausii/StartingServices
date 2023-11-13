@@ -15,7 +15,10 @@ class MainActivity : AppCompatActivity() {
         val inputEditText = findViewById<EditText>(R.id.inputEditText)
 
         startButton.setOnClickListener {
-
+            val inputValue = inputEditText.text.toString().toInt()
+            val intent = Intent(this, CountdownService::class.java)
+            intent.putExtra("countdown_value", inputValue)
+            startService(intent)
         }
     }
 }
